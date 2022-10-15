@@ -15,3 +15,14 @@ For back-end JS scripts used:
 This project is created as an interview problem ( for developing automation mail sending webapp ) by BrainSeed foundation.
 
 Gmail is sended on brainseednetworks931@gmail.com, at a spam block.
+
+##### For running this project in your environment, follow steps below:
+- Pull this project in your private environment / Local Storage.
+- Use "npm install", to install all dependencies inside package.json file
+- In Git Bash run command "node app.js"
+- Finally, in your browser search for "localhost:3000"
+- WebApp will open in your browser
+
+### for changing receiver Gmail Address:
+In app.js file, search for mailOptions, inside post request for contact page.
+there after "to:" keyword, you can add new receiver email
