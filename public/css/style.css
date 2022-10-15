@@ -6,15 +6,14 @@
 }
 
 body{
-    background-color: rgb(29, 29, 29);
+    background-color: #FECD45;
     overflow: hidden;
 }
 
 header{
     width: 100%;
     height: 5em;
-    border: 2px solid rgb(78, 78, 78);
-    background-color: rgb(68, 68, 68);
+    background-color: #2568FB;
 }
 
 header #uppertag{
@@ -40,14 +39,15 @@ header #uppertag ul li{
 }
 
 header #uppertag ul li button:hover{
+    transition: all 350ms ease-in-out;
     width: 10rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     cursor: pointer;
-    text-shadow: 1px 1px 3px #CECECE;
+    text-shadow: 1px 1px 3px #434343;
 }
 
 header #uppertag ul li button{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 10rem;
     color: #fff;
     text-decoration: none;
@@ -65,11 +65,25 @@ section{
     width: 98.5vw;
 }
 
+section .sectionText{
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+    font-size: 5rem;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #2568FB;
+}
+
 #formCell{
     width: 40%;
     height: 80%;
     margin: 10vh auto;
-    background-color: rgb(68, 68, 68);
+    border-radius: 20px;
+    background-color: #2568FB;
+    box-shadow: 0px 0px 30px -1px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 0px 0px 30px -1px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 0px 30px -1px rgba(0,0,0,0.51);
 }
 
 form{
@@ -104,10 +118,16 @@ form h2{
     border-radius: 10px;
     border: none;
     padding: 0.5rem 1rem;
+    box-shadow: 0px 0px 40px -8px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 0px 0px 40px -8px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 0px 40px -8px rgba(0,0,0,0.51);
 }
 
 #formInput input:focus{
     outline: none;
+    box-shadow: -2px -1px 17px 3px rgba(0,0,0,0.51);
+    -webkit-box-shadow: -2px -1px 17px 3px rgba(0,0,0,0.51);
+    -moz-box-shadow: -2px -1px 17px 3px rgba(0,0,0,0.51);
 }
 
 #formInput textarea{
@@ -117,10 +137,16 @@ form h2{
     margin: 1rem 0 0 5%;
     border-radius: 10px;
     resize: none;
+    box-shadow: 0px 0px 40px -8px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 0px 0px 40px -8px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 0px 40px -8px rgba(0,0,0,0.51);
 }
 
 #formInput textarea:focus{
     outline: none;
+    box-shadow: -2px -1px 17px 3px rgba(0,0,0,0.51);
+    -webkit-box-shadow: -2px -1px 17px 3px rgba(0,0,0,0.51);
+    -moz-box-shadow: -2px -1px 17px 3px rgba(0,0,0,0.51);
 }
 
 form button{
@@ -134,7 +160,8 @@ form button{
     border-radius: 10px;
 }
 
-form button:hover{
+.formButton:hover{
+    transition: all 350ms ease-in-out;
     cursor: pointer;
     font-size: 1.6rem;
     border-radius: 8px;
@@ -142,6 +169,21 @@ form button:hover{
     width: 7.2rem;
     color: white;
     background-color: transparent;
+    box-shadow: 0px 0px 40px -8px rgba(0,0,0,0.51);
+    -webkit-box-shadow: 0px 0px 40px -8px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 0px 40px -8px rgba(0,0,0,0.51);
+}
+
+footer{
+    height: 10%;
+    width: 100%;
+    margin-top: -12em;
+}
+
+footer span{
+    position: absolute;
+    margin-left: 70%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @media only screen and (max-width: 768px) {
@@ -149,12 +191,18 @@ form button:hover{
     #formCell{
         width: 60%;
     }
+    footer span{
+        margin-top: 12%;
+    }
 }
 
 @media only screen and (max-width: 430px) {
     /* For tablets: */
     #formCell{
         width: 80%;
+    }
+    footer span{
+        margin-top: 19%;
     }
 }
 
@@ -179,13 +227,13 @@ form button:hover{
         border-radius: 7px;
     }
 
-    form button{
+    form .formButton{
         height: 1.5rem;
         width: 5rem;
         font-size: 0.8rem;
     }
 
-    form button:hover{
+    form .formButton:hover{
         font-size: 0.9rem;
         height: 1.6rem;
         width: 5.1rem;

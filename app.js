@@ -32,7 +32,7 @@ app.post("/contact", function(req, res){
     senderEmail = req.body.senderEmail0;
     senderPhone = req.body.senderPhone0;
     message = req.body.senderMessage0;
-    var body = "Name: " + senderName + "<br /> Email: " + senderEmail + "<br /> Phone no.: " + senderPhone + "<br /> Message: " + message;
+    var body = "Name: " + senderName + "<br />       Email: " + senderEmail + "<br />       Phone no.: " + senderPhone + "<br />        Message: " + message;
 
     var transporter = nodemailer.createTransport({
         service: 'hotmail',
