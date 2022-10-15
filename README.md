@@ -1,5 +1,5 @@
 # Automation_Mail_Sender
-A backend project builds on node.js, used to send automation emails on respective email
+A backend project builds on node.js, used to send automation emails on respective email ( currently using: brainseednetworks931@gmail.com)
 
 For front-end languages used:
 - HTML5
@@ -13,3 +13,5 @@ For back-end JS scripts used:
 - nodemailer.js (for sending gmail)
 
 This project is created as an interview problem ( for developing automation mail sending webapp ) by BrainSeed foundation.
+
+Gmail is sended on brainseednetworks931@gmail.com, at a spam block.
