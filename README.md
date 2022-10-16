@@ -1,5 +1,5 @@
 # Automation_Mail_Sender
-A backend project builds on node.js, used to send automation emails on respective email ( currently using: brainseednetworks931@gmail.com)
+A responsive backend project builds on node.js, used to send automation emails on respective email ( currently using: brainseednetworks931@gmail.com)
 
 For front-end languages used:
 - HTML5
