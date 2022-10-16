@@ -26,3 +26,6 @@ Gmail is sended on brainseednetworks931@gmail.com, at a spam block.
 ### for changing receiver Gmail Address:
 In app.js file, search for mailOptions, inside post request for contact page.
 there after "to:" keyword, you can add new receiver email
+
+WebApp is hosted on Heroku US server, follow the link below:
+      https://automation-gmail-sender.herokuapp.com/?
